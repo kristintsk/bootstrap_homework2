@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Seeneralli</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            height: 100vh;
+            background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h2 {
+            padding: 0.5em;
+            color: #45424b;
+        }
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .navbar {
+            background-color: #bab1c8 !important;
+        }
+        
+        .nav-link,
+        .navbar-brand,
+        .navbar-dark .navbar-toggler {
+            color: #f8f5fd !important;
+            border-color: #f8f5fd !important;
+        }
+        
+        .navbar-brand {
+            padding: 0;
+        }
+        
+        .navbar a:hover {
+            transform: scale(1.1);
+            color: #fcfbfe;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Metsast oled sa leitud ...</h2>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="https://loodusegakoos.ee/puuri-uuri/lisamaterjalid"><img src="logo.png" alt="Basket"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.looduskalender.ee/n/node/1520">Kukeseen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://mukoloogiauhing.ut.ee/aasta-seen-2019-soomustindik">Soomustindik</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.rmk.ee/metsa-majandamine/loodusblogi/tanuseen">Tanuseen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.rmk.ee/metsa-majandamine/loodusblogi/punane-karbseseen">Kärbseseen</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="kukeseen.jpg" alt="Kukeseen">
+                    <div class="carousel-caption">
+                        <h3>Harilik kukeseen</h3>
+                        <p><i>Cantharellus cibarius</i></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tindiseen.jpg" alt="Tindiseen">
+                    <div class="carousel-caption">
+                        <h3>Soomustindik</h3>
+                        <p><i>Coprinus comatus</i></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tanuseen.jpg" alt="Tanuseen">
+                    <div class="carousel-caption">
+                        <h3>Harilik tanuseen</h3>
+                        <p><i>Phallus impudicus</i></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="karbseseen.jpg" alt="Karbseseen">
+                    <div class="carousel-caption">
+                        <h3>Punane kärbseseen</h3>
+                        <p><i>Amanita muscaria</i></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarouselo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
